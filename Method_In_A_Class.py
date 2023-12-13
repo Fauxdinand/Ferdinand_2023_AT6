@@ -20,7 +20,3 @@ class Validator:
             
 
 
-validator = Validator()
-user_inputs = ["10", "20", "abc", "-5", "30", "a"]
-valid_data = validator.validate_data(user_inputs)
-print(valid_data)  # Output: [10, 20, 30]
