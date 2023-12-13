@@ -18,5 +18,3 @@ class Validator:
         return self.v_l
  
             
-
-
