@@ -4,17 +4,17 @@ class Validator:
        and returns a new list only containing the valid integers.
     '''
     def __init__(self):
-        self.v_l = []
+        self.valid_list = []
 
-    def validate_data(self, s_l):
-        for _ in s_l:
+    def validate_data(self, string_list):
+        for elem in string_list:
             try:
-                n = int(_)
-                if n>0:
-                    self.v_l.append(n)
+                num = int(elem)
+                if num > 0:
+                    self.valid_list.append(num)
             except ValueError: 
                 pass
-            assert all(isinstance(_,int) and _>0 for _ in self.v_l)
-        return self.v_l
+            assert all(isinstance(elem,int) and elem>0 for elem in self.valid_list)
+        return self.valid_list
  
             
